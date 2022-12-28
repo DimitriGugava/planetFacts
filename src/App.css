@@ -1,4 +1,4 @@
-.App {
+.parentContainer {
   background-image: url(./icons/background.jpg);
   background-size: 100%;
   margin: auto;
@@ -321,4 +321,526 @@
   letter-spacing: 0.7272727489471436px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+}
+
+.fordesktopandtablet {
+  display: none;
+}
+.overstructsurfMobileDeskt {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .parentContainer {
+    background-image: url(./icons/background.jpg);
+    background-size: 100%;
+    margin: auto;
+    height: 1024px;
+    width: 768px;
+  }
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 194px;
+    margin: 16px auto;
+    height: 36px;
+    width: 327px;
+  }
+
+  .headerText {
+    height: 36px;
+    width: 109px;
+    margin: 32px auto;
+    font-family: "Antonio";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -1.0499999523162842px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .fordesktopandtablet {
+    height: 25px;
+    width: 665px;
+    margin-top: 39px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .headerScroll {
+    height: 17px;
+    width: 24px;
+    display: none;
+  }
+
+  .breakLine {
+    height: 1px;
+    width: 768px;
+    margin-top: 27px;
+    background: rgba(255, 255, 255, 1);
+    mix-blend-mode: normal;
+    opacity: 0.2;
+  }
+
+  .planetName {
+    display: flex;
+    align-items: flex-start;
+    height: 25px;
+    width: 91px;
+    margin-left: 25px;
+    font-family: "Spartan";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.3636363744735718px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
+
+  .planetName:hover {
+    cursor: pointer;
+  }
+  .arrow {
+    height: 18px;
+    width: 14px;
+    margin-left: 160px;
+  }
+  .arrow {
+    cursor: pointer;
+  }
+
+  /* second part of mobile version */
+
+  .planetInfoOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+    height: 25px;
+    gap: 52px;
+    display: none;
+  }
+  .overstructsurfMobileDeskt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    height: 162px;
+    width: 291px;
+    margin-left: 447px;
+    margin-top: 476px;
+    border-radius: 0px;
+    gap: 10px;
+  }
+  .desktoptabletplanetInfoOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 281px;
+
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  .desktoptabletplanetInfoOption:hover {
+    cursor: pointer;
+    background: rgba(65, 158, 187, 1);
+    border: 0px solid rgba(255, 255, 255, 1);
+  }
+  .desktoptabletoptionText {
+    height: 25px;
+    width: 70px;
+    font-family: "Spartan";
+    font-size: 9px;
+    font-weight: 700;
+    margin-left: 16px;
+    line-height: 25px;
+    letter-spacing: 1.9285714626312256px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .desktoptabletoptionText:hover {
+    cursor: pointer;
+
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .optionnumber {
+    display: flex;
+    margin-left: 10px;
+    height: 25px;
+    width: 13px;
+    font-family: "Spartan";
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.9285714626312256px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .breakLineUnderOption {
+    display: none;
+  }
+
+  .planetImage {
+    height: 184px;
+    width: 184px;
+
+    margin: 95px 295px;
+  }
+  .planetImageGeo {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    margin-top: -200px;
+    margin-left: 312px;
+  }
+  .headerTextPlanet {
+    margin: 30px 0px;
+
+    height: 52px;
+    width: 182px;
+    font-family: "Antonio";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .contentText {
+    height: 110px;
+    width: 339px;
+    margin: 0px 35px;
+    font-family: "Spartan";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .sourceBox {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 25px;
+    width: 140px;
+    margin: 32px 35px;
+    left: 32px 93px;
+    top: 210px;
+    border-radius: 0px;
+  }
+
+  /* mobile bottom statistics  */
+
+  .statisticInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 100px;
+    width: 700px;
+    margin: 30px 39px;
+  }
+
+  .statisticBox {
+    display: flex;
+    flex-direction: column;
+    height: 88px;
+    width: 164px;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    mix-blend-mode: normal;
+  }
+
+  .statText {
+    height: 26px;
+    width: 140px;
+    font-family: "Spartan";
+    margin-left: 24px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.7272727489471436px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  .statNumber {
+    display: inline-block;
+    height: 31px;
+    width: 107px;
+    margin-top: -50px;
+    font-family: "Antonio";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.8999999761581421px;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .parentContainer {
+    background-image: url(./icons/background.jpg);
+    background-size: 100%;
+    margin: auto;
+
+    width: 1440px;
+  }
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 194px;
+    margin: 16px auto;
+    height: 36px;
+    width: 327px;
+  }
+
+  .headerText {
+    display: inline-block;
+    margin: 22px -510px;
+    font-family: "Antonio";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -1.0499999523162842px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .fordesktopandtablet {
+    position: absolute;
+
+    height: 25px;
+    width: 920px;
+    margin-top: -45px;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .headerScroll {
+    height: 17px;
+    width: 24px;
+    display: none;
+  }
+
+  .breakLine {
+    height: 1px;
+    width: 1440px;
+
+    margin-top: 27px;
+    background: rgba(255, 255, 255, 1);
+    mix-blend-mode: normal;
+    opacity: 0.2;
+  }
+
+  .planetName {
+    display: flex;
+    align-items: flex-start;
+    height: 25px;
+    width: 91px;
+    margin-left: 25px;
+    font-family: "Antonio";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.3636363744735718px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
+
+  .planetName:hover {
+    cursor: pointer;
+  }
+
+  /* second part of mobile version */
+
+  .planetInfoOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+    height: 25px;
+    gap: 52px;
+    display: none;
+  }
+  .overstructsurfMobileDeskt {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    height: 162px;
+    width: 331px;
+    margin-left: 447px;
+    margin-top: 376px;
+    border-radius: 0px;
+    gap: 10px;
+  }
+  .desktoptabletplanetInfoOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 176px;
+    width: 390px;
+    margin-left: 472px;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+  .desktoptabletplanetInfoOption:hover {
+    cursor: pointer;
+    background: rgba(65, 158, 187, 1);
+    border: 0px solid rgba(255, 255, 255, 1);
+  }
+  .desktoptabletoptionText {
+    height: 25px;
+    width: 70px;
+    font-family: "Spartan";
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 18px;
+    line-height: 25px;
+    letter-spacing: 1.9285714626312256px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+  .desktoptabletoptionText:hover {
+    cursor: pointer;
+
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .optionnumber {
+    display: flex;
+    margin-left: 10px;
+    height: 25px;
+    width: 13px;
+    font-family: "Spartan";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.9285714626312256px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .breakLineUnderOption {
+    display: none;
+  }
+
+  .planetImage {
+    height: 290px;
+    width: 290px;
+    margin: 150px 295px;
+  }
+  .planetImageGeo {
+    position: absolute;
+    height: 170px;
+    width: 170px;
+    margin-top: 340px;
+    margin-left: -525px;
+  }
+  .headerTextPlanet {
+    position: absolute;
+    margin-left: 925px;
+    margin-top: -555px;
+    height: 104px;
+    width: 263px;
+    font-family: "Antonio";
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 104px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .contentText {
+    position: absolute;
+    height: 110px;
+    width: 399px;
+    margin-left: 925px;
+    margin-top: -440px;
+    font-family: "Spartan";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgb(229, 223, 223);
+  }
+  .sourceBox {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left: 925px;
+    margin-top: 180px;
+    gap: 2px;
+    height: 25px;
+    width: 140px;
+    border-radius: 0px;
+  }
+
+  /* mobile bottom statistics  */
+
+  .statisticInfoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    height: 200px;
+    width: 1400px;
+    margin: 0px auto;
+  }
+
+  .statisticBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 128px;
+    width: 255px;
+    gap: 80px;
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+    mix-blend-mode: normal;
+  }
+
+  .statText {
+    height: 26px;
+    width: 180px;
+    font-family: "Spartan";
+    margin-left: 24px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.7272727489471436px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+  .statNumber {
+    display: inline-block;
+    height: 31px;
+    width: 157px;
+    margin-top: -70px;
+    font-family: "Antonio";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: -0.8999999761581421px;
+    text-align: left;
+  }
 }

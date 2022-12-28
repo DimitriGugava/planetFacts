@@ -1,4 +1,4 @@
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import data from "./data.json";
 import "./App.css";
 import {
@@ -18,8 +18,8 @@ import ScrollBar from "./ScrollBar/ScrollBar";
 
 const MainComp = (props) => {
   const [hideOverview, setHideOverview] = useState(true);
-  const [hideStructure, setHideStructure] = useState(true);
-  const [hideSurface, setHideSurface] = useState(true);
+  const [hideStructure, setHideStructure] = useState(false);
+  const [hideSurface, setHideSurface] = useState(false);
 
   const { id } = useParams();
   const planet = data.find(
@@ -43,11 +43,35 @@ const MainComp = (props) => {
     setHideStructure(false);
     setHideSurface(true);
   };
+  useEffect(() => {
+    const timer = setTimeout(() => {}, 3000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div>
+      <div className="overstructsurfMobileDeskt">
+        <div className="desktoptabletplanetInfoOption" onClick={showHide}>
+          <div className="optionnumber">01</div>
+          <a onClick={showHide} className="desktoptabletoptionText">
+            OVERVIEW
+          </a>
+        </div>
+        <div className="desktoptabletplanetInfoOption" onClick={showHideStr}>
+          <div className="optionnumber">02</div>
+          <a className="desktoptabletoptionText" onClick={showHideStr}>
+            STRUCTURE
+          </a>
+        </div>
+        <div className="desktoptabletplanetInfoOption" onClick={showHideSurf}>
+          <div className="optionnumber">03</div>
+          <a className="desktoptabletoptionText" onClick={showHideSurf}>
+            SURFACE
+          </a>
+        </div>
+      </div>
       <div className="mainContainer">
         {!props.headerBar ? (
-          <div>
+          <div className="mobileplanetoptions">
             <div className="planetInfoOption">
               <a onClick={showHide} className="optionText">
                 OVERVIEW
@@ -60,9 +84,11 @@ const MainComp = (props) => {
               </a>
             </div>
             <div className="breakLineUnderOption"></div>
+
             {hideOverview ? <Overview planet={planet} /> : ""}
             {hideStructure ? <Structure planet={planet} /> : " "}
             {hideSurface ? <Surface planet={planet} /> : " "}
+
             <div className="statisticInfoContainer">
               <div className="statisticBox">
                 <h2 className="statText">ROTATION TIME</h2>
